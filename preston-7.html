@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/weather-sites.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Naomi's Site</title>
+        <meta name="description" content="Website Project for BYUI CIT230 Class">
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
+        <script src="js/time.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="js/toggle-menu-script.js"></script>
+    </head>
+    <body onload="getTime(); getWindChill();">
+        <header>
+            <div id="name-and-slogan">
+                <h1>Forecast Friend</h1>
+                <i>In fair or foul weather</i>
+            </div>
+            <img alt="Forecast Friends Logo" src="images/ForecastFriendsLogo.png">
+        </header>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-7.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="weather-content">
+                <h2>Preston Idaho</h2>
+                <div class="town-options" id="hero">
+                    <img alt="town picture", srcset="images/franklin_srcset-min_650.jpg 1x, images/franklin_srcset_min-1074.jpg 2x, images/franklin_srcset-min_1380.jpg 3x", src="images/franklin_srcset-min_650.jpg">
+                    <div id="weather-summary">
+                      <h3>Weather Summary</h3>
+                      <p>Currently: Sunny</p>
+                      <p>High: 54 &#176;F</p>
+                      <p id="windchill"></p>
+                      <p>Humidity: 95%</p>
+                      <p>Wind Speed: 12 mph</p>
+                    </div>
+                </div>
+                <div class="town-options" id="forecast">
+                    <h3>5 Day Weather Forecast</h3>
+                    <table>
+                        <tr>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/sun-icon.png">
+                                <p>90&#176; F</p>
+                            </td>
+                            <td>
+                                <img src="images/sun-icon.png">
+                                <p>89&#176; F</p>
+                            </td>
+                            <td>
+                                <img src="images/sun-icon.png">
+                                <p>88&#176; F</p>
+                            </td>
+                            <td>
+                                <img src="images/sun-icon.png">
+                                <p>87&#176; F</p>
+                            </td>
+                            <td>
+                                <img src="images/sun-icon.png">
+                                <p>86&#176; F</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="town-options" id="article">
+                    <img srcset="images/action-adult-celebration-6050_650.jpg 1x, images/action-adult-celebration-6050_1074.jpg 2x images/action-adult-celebration-6050_1380.jpg 3x" src="images/action-adult-celebration-6050.jpg" alt="picnic image" id="picnic-image">
+                    <h3>Founder Day Fiasco</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="town-options" id="contact-info">
+                    <img src="images/preston-idaho.jpg" alt="map image" id="map-image">
+                    <div id="contact-text">
+                        <strong>Forecast Friends</strong>
+                        <p>Beaverton, OR, 97003</p>
+                        <p>Phone: 999-999-9999</p>
+                        <p>che17030@byui.edu</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>&copy; <span id="year"></span> | Nai Shih Chen | Oregon |&nbsp;<a href="">BYUI Online Learning</a></p>
+            </div>
+            <div>
+                <p>Last Updated: <span id="fullDate"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>

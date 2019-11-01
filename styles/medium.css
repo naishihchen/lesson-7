@@ -1,0 +1,59 @@
+@media only screen and (min-width: 40em) {
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        background-color: #CBEAA6;
+        height: 100px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .nav li:first-child {
+        display: none;
+    }
+    
+    .nav li {
+        display: block;
+    }
+    
+    #forecast {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #forecast th {
+        background-color: #CBEAA6;
+        border: 1px solid black;
+    }
+    
+    #forecast td {
+        border: 1px solid black;
+    }
+    
+    #forecast td p {
+        text-align: center;
+    }
+    
+    #map-image {
+        display: flex;
+        width: 300px;
+    }
+    
+    #contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+}

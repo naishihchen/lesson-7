@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/gallery.css" rel="stylesheet">
+        <link href="styles/medium-gallery.css" rel="stylesheet">
+        <link href="styles/large-gallery.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Naomi's Site</title>
+        <meta name="description" content="Website Project for BYUI CIT230 Class">
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
+        <script src="js/time.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="js/toggle-menu-script.js"></script>
+    </head>
+    <body onload="getTime(); getWindChill();">
+        <header>
+            <div id="name-and-slogan">
+                <h1>Forecast Friend</h1>
+                <i>In fair or foul weather</i>
+            </div>
+            <img alt="Forecast Friends Logo" src="images/ForecastFriendsLogo.png">
+        </header>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-7.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+          <h1>Weather Gallery</h1>
+          <div id="weather-gallery">
+            <div class="weather-image">
+              <img src="images/storms/Storm1.jpg" alt="storm-road-with-lightning">
+              <p>Storm path lit with lightning</p>
+            </div>
+            <div class="weather-image">
+              <img src="images/storms/Storm2.jpg" alt="lightning-over-city">
+              <p>Lightning in the city</p>
+            </div>
+            <div class="weather-image">
+              <img src="images/storms/Storm3.jpg" alt="lightning-over-cloud">
+              <p>Cloud lit by lightning</p>
+            </div>
+            <div class="weather-image">
+              <img src="images/storms/Storm4.jpg" alt="-blue-storm">
+              <p>Bright blue storm with orange sunset</p>
+            </div>
+            <div class="weather-image">
+              <img src="images/storms/Storm5.jpg" alt="white-storm-lightning">
+              <p>White storm with lightning</p>
+            </div>
+            <div class="weather-image">
+              <img src="images/storms/Storm6.jpg" alt="lightning-storm">
+              <p>Blue web of lightning</p>
+            </div>
+            <div class="weather-image">
+              <img src="images/storms/Storm7.jpg" alt="purple-lightning-flash">
+              <p>Purple flash of lightning</p>
+            </div>
+            <div class="weather-image">
+              <img src="images/storms/Storm8.jpg" alt="crawling-lightning">
+              <p>Crawling web of lightning</p>
+            </div>
+            <div class="weather-image">
+              <img src="images/storms/Storm9.jpg" alt="volcano-storm">
+              <p>Volcanic column of lightning</p>
+            </div>
+          </div>
+        </main>
+        <footer>
+            <div>
+                <p>&copy; <span id="year"></span> | Nai Shih Chen | Oregon |&nbsp;<a href="">BYUI Online Learning</a></p>
+            </div>
+            <div>
+                <p>Last Updated: <span id="fullDate"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>

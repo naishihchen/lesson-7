@@ -1,0 +1,39 @@
+@media only screen and (min-width: 40em) {
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        background-color: #CBEAA6;
+        height: 100px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .nav li:first-child {
+        display: none;
+    }
+
+    .nav li {
+        display: block;
+    }
+
+    #weather-gallery {
+      display: flex;
+    }
+
+    .weather-image {
+      width: 40%;
+    }
+
+    .weather-image img {
+      width: 100%;
+    }
+
+  }
