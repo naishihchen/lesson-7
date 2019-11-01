@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 60em) {
 
     .nav {
         display: flex;
@@ -25,12 +25,17 @@
     }
 
     #weather-gallery {
-      display: flex;
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-gap: 20px;
+    }
 
+    .weather-div:hover {
+      box-shadow: 5px 10px;
     }
 
     .weather-image {
-      width: 33%;
+      width: 100%;
     }
     .weather-image img {
       width: 100%;

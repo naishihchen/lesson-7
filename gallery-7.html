@@ -13,6 +13,7 @@
         <script src="js/time.js"></script>
         <script src="js/windchill.js"></script>
         <script src="js/toggle-menu-script.js"></script>
+        <script src="js/lazyloading.js" defer></script>
     </head>
     <body onload="getTime(); getWindChill();">
         <header>
@@ -36,42 +37,70 @@
         <main>
           <h1>Weather Gallery</h1>
           <div id="weather-gallery">
-            <div class="weather-image">
-              <img src="images/storms/Storm1.jpg" alt="storm-road-with-lightning">
-              <p>Storm path lit with lightning</p>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm1.jpg" alt="storm-road-with-lightning">
+            </picture>
+            <p>Storm path lit with lightning</p>
             </div>
-            <div class="weather-image">
-              <img src="images/storms/Storm2.jpg" alt="lightning-over-city">
-              <p>Lightning in the city</p>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm2.jpg" alt="lightning-over-city">
+            </picture>
+            <p>Lightning over city</p>
             </div>
-            <div class="weather-image">
-              <img src="images/storms/Storm3.jpg" alt="lightning-over-cloud">
-              <p>Cloud lit by lightning</p>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm3.jpg" alt="lightning-over-cloud">
+            </picture>
+            <p>Lightning over clouds</p>
             </div>
-            <div class="weather-image">
-              <img src="images/storms/Storm4.jpg" alt="-blue-storm">
-              <p>Bright blue storm with orange sunset</p>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm4.jpg" alt="-blue-storm">
+            </picture>
+            <p>Blue storm with orange sunset</p>
             </div>
-            <div class="weather-image">
-              <img src="images/storms/Storm5.jpg" alt="white-storm-lightning">
-              <p>White storm with lightning</p>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm5.jpg" alt="white-storm-lightning">
+            </picture>
+            <p>White storm with lightning</p>
             </div>
-            <div class="weather-image">
-              <img src="images/storms/Storm6.jpg" alt="lightning-storm">
-              <p>Blue web of lightning</p>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm6.jpg" alt="lightning-storm">
+            </picture>
+            <p>Blue web of lightning</p>
             </div>
-            <div class="weather-image">
-              <img src="images/storms/Storm7.jpg" alt="purple-lightning-flash">
-              <p>Purple flash of lightning</p>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm7.jpg" alt="purple-lightning-flash">
+            </picture>
+            <p>Purple lightning flash</p>
             </div>
-            <div class="weather-image">
-              <img src="images/storms/Storm8.jpg" alt="crawling-lightning">
-              <p>Crawling web of lightning</p>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm8.jpg" alt="crawling-lightning">
+            </picture>
+            <p> Web of crawling lightning</p>
             </div>
-            <div class="weather-image">
-              <img src="images/storms/Storm9.jpg" alt="volcano-storm">
-              <p>Volcanic column of lightning</p>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm9.jpg" alt="volcano-storm">
+            </picture>
+            <p>column of volcanic lightning</p>
             </div>
+
           </div>
         </main>
         <footer>

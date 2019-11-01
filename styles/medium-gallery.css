@@ -25,11 +25,13 @@
     }
 
     #weather-gallery {
-      display: flex;
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-gap: 20px;
     }
 
     .weather-image {
-      width: 40%;
+      width: 100%;
     }
 
     .weather-image img {
